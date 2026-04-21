@@ -13,8 +13,7 @@ I’m currently transitioning from a background in healthcare into software deve
 - CSS
 
 ## Features
-- Clean and simple user interface
-
+Clean and simple user interface
 
 ## Projects
 More projects will be added as I continue building.
