@@ -1,0 +1,208 @@
+body{
+    background-color:rgb(244, 236, 244);
+    color:black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+header {
+    padding: 20px;
+    font-style: italic;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    margin:0 5px;
+}
+
+/* Adds "|" separator except for the last link wihtout having to type it mnaually */
+nav a:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px; /* the space between link text and separator */
+}
+
+/* hover effect on nav links */
+nav a:hover {
+    background-color: #dda0dd;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid purple;
+}
+#main-section p{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color:purple;
+    color:thistle;
+    font-size: larger;
+    line-height:2.0;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding:20px;
+    
+}
+/* header + nav container to add border */
+#header-nav{
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right:10px;
+}
+/* headshot image cicular with a margine to give space between image and header-nav section */
+#headshot{
+    border-radius: 50%;;
+    border:2px solid black;
+    margin: 30px;
+}
+
+/* Styling for projects page */
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color:purple;
+    text-decoration:none;
+    border-radius: 8px;
+    border: 2px solid purple;
+}
+.btn:hover {
+    background-color: #47075e;
+    transform: translateY(-2px);
+    color:white;
+}
+.projects-main {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+}
+.projects-main h2 {
+    text-align: center;
+}
+.projects-section {
+    background-color: rgb(192, 140, 225);
+    margin-bottom: 20px;
+    border-radius: 12px;
+    line-height:1..8;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+    font-size:large;
+    border: 2px solid purple;
+
+}
+.projects-section h3 {
+    color:purple;
+    margin-bottom: 10px;
+}
+
+/* Styling for reusme page */
+.resume-main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+}
+.resume-main h2, .resume-main h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.resume-main ul {
+    padding-left: 20px;
+    line-height: 1.7;
+}
+.resume-btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #47075e;
+    color:white;
+    text-decoration:none;
+    border-radius: 8px;
+    border: 2px solid purple;
+}
+.resume-btn:hover {
+    background-color: transparent;
+    transform: translateY(-2px);
+    color:purple;
+}
+.skills ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+.skills ul li{
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #b533b5;
+}
+
+/* conatct page */
+.contact-main {
+    max-width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+}
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact-section p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: gray;
+}
+.contact-list {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 25px; /* space between each item */
+    list-style:none;
+    background-color: rgb(192, 140, 225);
+    border: 2px solid purple;
+    padding: 15px 20px;
+    border-radius: 12px;
+}
+.contact-list li {
+    display: flex;
+    justify-content: space-between;   /* label left, link right */
+    align-items: center;
+}
+.contact-list a {
+    color: purple;
+    text-decoration: none;
+    font-weight: 500;
+}
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* about me page */
+.about-main {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+}
+.about-section {
+    background-color: rgb(192, 140, 225);
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid purple;
+}
+.about-section p {
+    line-height: 1.7; 
+    margin-bottom: 15px; /* adds spacing between paragraphs */
+    font-size:large;
+}
+
+/* thoughts.html */
+.thoughts-main {
+    max-width: 80%;
+    margin: 40px auto;
+    background-color: rgb(192, 140, 225);
+    border-radius: 12px;
+    padding: 20px;
+}
