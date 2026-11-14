@@ -259,6 +259,11 @@ footer{padding:28px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px sol
     var el=document.getElementById(id); if(el) io.observe(el);
   });
 })();
+// Open all outside links in a new tab
+document.querySelectorAll('a[href^="http"]').forEach(function(a){
+  a.target = '_blank';
+  a.rel = 'noopener';
+});
 </script>
 </body>
 </html>
